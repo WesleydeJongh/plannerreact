@@ -5,10 +5,14 @@ import CreateBodyPlanner from "./plannerBody/dayContainer";
 
 function App() {
   return (
-    <body>
-      <NavBar />
-      <CreateBodyPlanner />
-    </body>
+    <main>
+      <header>
+        <NavBar />
+      </header>
+      <div>
+        <CreateBodyPlanner />
+      </div>
+    </main>
   );
 }
 

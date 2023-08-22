@@ -1,122 +1,29 @@
 import React from "react";
-import tempList from "./tempListService";
+import createListOfSeriveCalls from "./serviceCall";
 
 
 
 export default function CreateBodyPlanner(){
-    return(
+    const daysOfWeekArray = ['Maandag', 'Dinsdag', 'Woensdag', 'Donderdag', 'Vrijdag', 'Zaterdag', 'Zondag'];
+
+    const CompleteWeek = daysOfWeekArray.map((i) =>{ {/*FOR every (i in daysOfWeekArray), every i is a list - with every serviceCall a list element*/}
+        return(
+                 <ul id={i}> {/*ID, so navBar can link to it. */}
+                    {i} {/* top of the dayContainer add the name of the day.*/}
+                    {createListOfSeriveCalls(i)} {/* call the list of service entries, add the 'day' into the function call to filter*/}
+                    <li className="addSign">
+                        addSign
+                    </li>
+                </ul>
+        )
+    })
+
+
+    return (
         <div className="plannerBody">
-             <ul id="Maandag"> {/*ID monday, so navBar can link to it. */}
-                Maandag
-                <li className="serviceCall">
-                    <li className="schipName commonStyling">
-                        {tempList[0].schipName}
-                    </li>
-                    <li className="plannedMechanic commonStyling">
-                        {tempList[0].monteur}
-                    </li>
-                    <li className="timeText commonStyling">
-                        {tempList[0].time}
-                    </li>
-                </li>
-
-                <li className="serviceCall">
-                    <li className="schipName commonStyling">
-                        {tempList[1].schipName}
-                    </li>
-                    <li className="plannedMechanic commonStyling">
-                        {tempList[1].monteur}
-                    </li>
-                    <li className="timeText commonStyling">
-                        {tempList[1].time}
-                    </li>
-                </li>
-
-                <li className="serviceCall">
-                    <li className="schipName commonStyling">
-                        {tempList[2].schipName}
-                    </li>
-                    <li className="plannedMechanic commonStyling">
-                        {tempList[2].monteur}
-                    </li>
-                    <li className="timeText commonStyling">
-                        {tempList[2].time}
-                    </li>
-                </li>
-
-                <li className="serviceCall">
-                    <li className="schipName commonStyling">
-                        {tempList[3].schipName}
-                    </li>
-                    <li className="plannedMechanic commonStyling">
-                        {tempList[3].monteur}
-                    </li>
-                    <li className="timeText commonStyling">
-                        {tempList[3].time}
-                    </li>
-                </li>
-
-                <li className="addSign">
-                    addSign
-                </li>
-            </ul>
-
-            <ul id="Dinsdag"> {/*ID monday, so navBar can link to it. */}
-                Dinsdag
-                <li className="serviceCall">
-                    <li className="schipName commonStyling">
-                        {tempList[0].schipName}
-                    </li>
-                    <li className="plannedMechanic commonStyling">
-                        {tempList[0].monteur}
-                    </li>
-                    <li className="timeText commonStyling">
-                        {tempList[0].time}
-                    </li>
-                </li>
-
-                <li className="serviceCall">
-                    <li className="schipName commonStyling">
-                        {tempList[1].schipName}
-                    </li>
-                    <li className="plannedMechanic commonStyling">
-                        {tempList[1].monteur}
-                    </li>
-                    <li className="timeText commonStyling">
-                        {tempList[1].time}
-                    </li>
-                </li>
-
-                <li className="serviceCall">
-                    <li className="schipName commonStyling">
-                        {tempList[2].schipName}
-                    </li>
-                    <li className="plannedMechanic commonStyling">
-                        {tempList[2].monteur}
-                    </li>
-                    <li className="timeText commonStyling">
-                        {tempList[2].time}
-                    </li>
-                </li>
-
-                <li className="serviceCall">
-                    <li className="schipName commonStyling">
-                        {tempList[3].schipName}
-                    </li>
-                    <li className="plannedMechanic commonStyling">
-                        {tempList[3].monteur}
-                    </li>
-                    <li className="timeText commonStyling">
-                        {tempList[3].time}
-                    </li>
-                </li>
-                
-                <li className="addSign">
-                    addSign
-                </li>
-            </ul>
+                {CompleteWeek}
         </div>
-    )
+        )
 }
 
 

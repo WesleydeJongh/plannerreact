@@ -24,7 +24,8 @@
 }
 
 .plannerBody ul{
-    background-color: var(--shade_4);
+    color: var(--shade_0);
+    background-color: var(--shade_7);
     margin: .5rem 0rem;
     padding: .5rem 0rem;
     
@@ -33,9 +34,23 @@
 .plannerBody ul .serviceCall{
     display: flex;
     align-items: center;
-    background-color: var(--shade_3);
+ 
+    margin: 0.3rem;
+    border-radius: .3rem;
+    padding: 0rem 0rem;
+    gap: 1rem;
 
-    margin: .5rem;
+    color: black;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+.plannerBody ul .serviceCall ul{
+    display: flex;
+    background-color: var(--shade_6);
+    width: 100%;
+
+    margin: .1rem;
     border-radius: .3rem;
     padding: 0rem 0rem;
     gap: 1rem;
@@ -45,24 +60,24 @@
     text-decoration: none;
 }
 
-.plannerBody ul .serviceCall .commonStyling{
+.plannerBody ul .serviceCall ul .commonStyling{
     border-radius: .3rem;
     background-color: white;
     padding: .1rem .3rem;
 
     text-align: left;
-
 }
 
-.plannerBody ul .serviceCall .schipName{
+.plannerBody ul .serviceCall ul .schipName{
     width: 20rem;
+    font-weight: bold;
 }
 
-.plannerBody ul .serviceCall .plannedMechanic{
+.plannerBody ul .serviceCall ul .plannedMechanic{
     width: 10rem;
 }
 
-.plannerBody ul .serviceCall .timeText{
+.plannerBody ul .serviceCall ul .timeText{
     width: 10rem;
 }
 
