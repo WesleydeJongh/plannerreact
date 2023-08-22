@@ -1,0 +1,81 @@
+:root{
+    /* Rullens logo color _0, all above are shades above till almost black*/
+    --shade_0: #008ACE; 
+    --shade_2: #0079B5;
+    --shade_3: #006A9F;
+    --shade_4: #005B88;
+    --shade_5: #004C71;
+    --shade_6: #003C5B;
+    --shade_7: #002D44;
+    --shade_8: #001E2D;
+}
+
+/* *{
+    border: 1px solid red;
+} */
+
+.plannerBody{
+    margin: .5rem 0;
+    padding: 0;
+
+    color: white;
+    text-align: center;
+
+}
+
+.plannerBody ul{
+    background-color: var(--shade_4);
+    margin: .5rem 0rem;
+    padding: .5rem 0rem;
+    
+}
+
+.plannerBody ul .serviceCall{
+    display: flex;
+    align-items: center;
+    background-color: var(--shade_3);
+
+    margin: .5rem;
+    border-radius: .3rem;
+    padding: 0rem 0rem;
+    gap: 1rem;
+
+    color: black;
+    list-style-type: none; /*remove dots from list elements */
+    text-decoration: none;
+}
+
+.plannerBody ul .serviceCall .commonStyling{
+    border-radius: .3rem;
+    background-color: white;
+    padding: .1rem .3rem;
+
+    text-align: left;
+
+}
+
+.plannerBody ul .serviceCall .schipName{
+    width: 20rem;
+}
+
+.plannerBody ul .serviceCall .plannedMechanic{
+    width: 10rem;
+}
+
+.plannerBody ul .serviceCall .timeText{
+    width: 10rem;
+}
+
+.plannerBody ul .addSign{
+    margin: .5rem;
+    border-radius: .3rem;
+    padding: .1rem .3rem;
+
+
+    color: black;
+    background-color: white;
+
+    list-style-type: none; /*remove dots from list elements */
+    text-decoration: none;
+}
+

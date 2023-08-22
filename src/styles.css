@@ -1,0 +1,28 @@
+:root{
+    /* Rullens logo color _0, all above are shades above till almost black*/
+    --shade_0: #008ACE; 
+    --shade_2: #0079B5;
+    --shade_3: #006A9F;
+    --shade_4: #005B88;
+    --shade_5: #004C71;
+    --shade_6: #003C5B;
+    --shade_7: #002D44;
+    --shade_8: #001E2D;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    background-color: lightgray;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/* remove styling from all anchors (href) */
+a{
+    color: inherit;
+    text-decoration: none;
+}
+
