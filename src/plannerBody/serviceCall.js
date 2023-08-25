@@ -1,10 +1,9 @@
 import React from "react";
-import tempList from "./tempListService";
 
-
-export default function createListOfSeriveCalls(day){
-    const array = tempList.map((i) => {
-        if(i.dag === day){
+export default function CreateListOfSeriveCalls(props){
+    
+    const array = props.content.map((i) => {
+        if(i.dag === props.dayOftheWeek){
             return(
                     <li className="serviceCall">
                         <ul>
@@ -20,7 +19,10 @@ export default function createListOfSeriveCalls(day){
                         </ul>
                     </li>  
             )
-        } 
+        } else {
+            
+        }
     })
     return array
 }
+

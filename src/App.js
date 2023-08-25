@@ -1,5 +1,9 @@
+// Nav bar
 import NavBar from "./navBar/navBar";
+
+// Main body, planner area
 import CreateBodyPlanner from "./plannerBody/dayContainer";
+import tempList from "./plannerBody/tempListService";
 
 
 
@@ -10,7 +14,7 @@ function App() {
         <NavBar />
       </header>
       <div>
-        <CreateBodyPlanner />
+        <CreateBodyPlanner content={tempList}/>
       </div>
     </main>
   );
